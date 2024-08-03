@@ -1,0 +1,67 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background: #f0f0f0;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.status {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
